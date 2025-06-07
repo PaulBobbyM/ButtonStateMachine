@@ -40,8 +40,8 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 ## File Structure
 
 
-/app.c                → Application logic and state machine
-/app.h                → Header for application state definitions
-/system_config/       → MPLAB Harmony configuration
-/main.c               → System init and task call
+app.c                → Application logic and state machine
+app.h                → Header for application state definitions
+system_config        → MPLAB Harmony configuration
+main.c               → System init and task call
 
