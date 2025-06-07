@@ -1,4 +1,4 @@
-# Pushbutton-Controlled State Machine   PIC32MZ2048EFH144
+# Pushbutton-Controlled State Machine  | PIC32MZ2048EFH144
 
 This project implements a pushbutton-driven finite state machine (FSM) on the PIC32MZ2048EFH144 microcontroller using MPLAB X v4.15 and Harmony v2. An LED visually indicates each state, and the system transitions between states based on button inputs with precise software-based debouncing.
 
