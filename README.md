@@ -1,6 +1,3 @@
-# ButtonStateMachine
-A pushbutton-driven state machine built on the PIC32MZ2048EFH144 using Harmony v2, featuring non-blocking software debouncing and real-time LED state indication.
-
 # Pushbutton-Controlled State Machine | PIC32MZ2048EFH144
 
 This project implements a pushbutton-driven finite state machine (FSM) on the PIC32MZ2048EFH144 microcontroller using MPLAB X v4.15 and Harmony v2. An LED visually indicates each state, and the system transitions between states based on button inputs with precise software-based debouncing.
@@ -38,7 +35,7 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 - **Debounce threshold**: 300ms
 - **Tick source**: SYS_TMR module
 
---
+---
 
 ## 📁 File Structure
 
