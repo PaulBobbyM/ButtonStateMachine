@@ -40,18 +40,32 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 ## File Structure
 
 
-/firmware/
-├── /src/
-│   ├── app.c                → Application logic (state machine, debouncing)
-│   ├── app.h                → Application state enums and definitions
-│   ├── main.c               → System initialization and task calling
-│   └── system_config/
-│       ├── default/
-│       │   ├── system_init.c       → Hardware and middleware initialization
-│       │   ├── system_config.h     → Configuration header
-│       │   ├── system_definitions.h → Global system declarations
-│       │   └── system_tasks.c      → Scheduler-style task runner
-│       └── bsp/                    → Board support package files
-├── /doc/ (optional)         → Documentation or design notes
-├── README.md
-└── *.X/                     → MPLAB Harmony project folder (e.g., .X production)
+firmware/
+
+src/
+
+app.c → UART command parsing logic, state machine execution
+
+app.h → State definitions, UART buffer declarations
+
+main.c → System init and main task loop
+
+system_config/
+
+default/
+
+system_init.c → Driver/system service initialization
+
+system_config.h → System configuration header
+
+system_definitions.h → Global handles and includes
+
+system_tasks.c → Calls application task function
+
+bsp/ → Board support package files (UART pins, LEDs)
+
+.X/ → MPLAB Harmony project metadata/build directory
+
+README.md → Project description, usage, features
+
+doc/ (optional) → UART command list, design notes, screenshots
