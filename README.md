@@ -4,7 +4,7 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 
 ---
 
-## 🚀 Features
+## Features
 
 - Finite State Machine with three active states and one initial state
 - Two pushbuttons for forward and reverse state transitions
@@ -14,7 +14,7 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - **Microcontroller**: PIC32MZ2048EFH144  
 - **IDE**: MPLAB X v4.15  
@@ -23,7 +23,7 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 
 ---
 
-## 📷 System Overview
+## System Overview
 
 | State         | LED Indicator |
 |---------------|---------------|
@@ -37,7 +37,7 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 
 /app.c                → Application logic and state machine
