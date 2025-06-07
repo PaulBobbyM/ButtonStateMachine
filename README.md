@@ -34,38 +34,17 @@ This project implements a pushbutton-driven finite state machine (FSM) on the PI
 
 - **Debounce threshold**: 300ms
 - **Tick source**: SYS_TMR module
-
 ---
+## Usage
 
-## File Structure
+- Press **Switch 1** to move to the next state (LED1 → LED2 → LED3 → INIT)
+- Press **Switch 2** to go to the previous state (LED3 → LED2 → LED1 → INIT)
+- Each state is visually indicated by the corresponding LED
+- Input is debounced in software to ensure accurate transitions
 
+## Build & Flash Instructions
 
-firmware/
-
-src/
-
-app.c → UART command parsing logic, state machine execution
-
-app.h → State definitions, UART buffer declarations
-
-main.c → System init and main task loop
-
-system_config/
-
-default/
-
-system_init.c → Driver/system service initialization
-
-system_config.h → System configuration header
-
-system_definitions.h → Global handles and includes
-
-system_tasks.c → Calls application task function
-
-bsp/ → Board support package files (UART pins, LEDs)
-
-.X/ → MPLAB Harmony project metadata/build directory
-
-README.md → Project description, usage, features
-
-doc/ (optional) → UART command list, design notes, screenshots
+1. Open the project in **MPLAB X v4.15**
+2. Ensure Harmony v2.06 is correctly installed and linked
+3. Select the correct hardware tool and compiler (XC32)
+4. Build and flash to the PIC32MZ2048EFH144 board
